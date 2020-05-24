@@ -7,7 +7,7 @@
     width: 100%;
     height: inherit;
 
-    @at-root #{&}__item-info{
+    &__item-info{
         display: none;
         position: absolute;
         background-color: $map-tooltip-info-bg;
@@ -19,18 +19,18 @@
         border-radius: .5rem;
     }
 
-    @at-root #{&}__svg{
+    &__svg{
         height: 100%;
     }
 
-    @at-root #{&}__border{
+    &__border{
         & path {
             fill: $map-border-color;
             pointer-events: none !important;
         }
     }
 
-    @at-root #{&}__sea, 
+    &__sea, 
     &__lake{
         & path {
             fill: $map-sea-color;
@@ -38,7 +38,7 @@
         }
     }
 
-    @at-root #{&}__province path, 
+    &__province path, 
     &__island path{
         fill: $map-fill-color;
         &:hover {

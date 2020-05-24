@@ -1,7 +1,5 @@
-// use mapItems to search through items and pass them to map.js
 const mapItems = []
 
-// create your own MapItem calss
 class MapItem {
     constructor(mapLocation, city, address) {
         // must at least declare province/island name as mapLocation property which is a search index
@@ -14,18 +12,18 @@ class MapItem {
         mapItems.push(this)
     }
     getMapItemInfo() {
-        // decide how you want to show mapItemInfo
+        // decide how you want to show mapItemInfo in a tooltip
         return `<p>city: ${this.city}</p><p>address: ${this.address}</p>`
     }
 }
 
-// create as many instance as you want
+// create as many instances as you want
 // province/island name must be as the same as below map guide
 const tehran = new MapItem('tehran', 'tehran', 'sample address', 'sample link')
 const fars = new MapItem('fars', 'shiraz', 'sample address', 'sample link')
 const kish = new MapItem('kish', 'kish', 'sample address', 'sample link')
 
-const getMapItemInfo = (mapLocation) => {
+const getMapItemInfo = mapLocation => {
     const mapItem = mapItems.find(mapItem => {
         return mapItem.mapLocation === mapLocation
     })
@@ -35,6 +33,11 @@ const getMapItemInfo = (mapLocation) => {
         // you can use custom string template to set as the default value
         mapItemInfo.innerHTML = mapLocation
     }
+}
+
+const handleMapItemClick = mapLocation => {
+    // handle what you want to do when a user clicked an item
+    alert(mapLocation)
 }
 
 // map guide:
