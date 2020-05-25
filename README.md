@@ -2,7 +2,7 @@
 Fully responsive with ability to add customize tooltip and click handlers
 
 ## Demo
-See the latest [demo](https://shhonarmandi.github.io/iran-svg-map/) at `https://shhonarmandi.github.io/iran-svg-map/`
+Checkout the latest [demo](https://shhonarmandi.github.io/iran-svg-map/) at `https://shhonarmandi.github.io/iran-svg-map/`
 
 ## How to Use?
 1. Load both `map-info.js` and `map.js` scripts at the end of your HTML file

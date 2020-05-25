@@ -377,11 +377,11 @@ html {
 }
 .iran-map__border path {
   fill: #fff;
-  pointer-events: none !important;
+  pointer-events: none;
 }
 .iran-map__sea path, .iran-map__lake path {
   fill: #3578a8;
-  pointer-events: none !important;
+  pointer-events: none;
 }
 .iran-map__province path, .iran-map__island path {
   fill: #f0eeed;

@@ -26,7 +26,7 @@
     &__border{
         & path {
             fill: $map-border-color;
-            pointer-events: none !important;
+            pointer-events: none;
         }
     }
 
@@ -34,7 +34,7 @@
     &__lake{
         & path {
             fill: $map-sea-color;
-            pointer-events: none !important;
+            pointer-events: none;
         }
     }
 
