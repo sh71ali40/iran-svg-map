@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "sass src/sass/main.scss src/css/style.css --watch --style compressed"
   },
   "author": "shhonarmandi",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.26.5"
+    "sass": "^1.26.7"
   }
 }

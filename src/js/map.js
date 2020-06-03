@@ -19,12 +19,15 @@ maps.forEach(map => {
 })
 
 const getMapItemRelativeCoordinates = e => {
-    if (e.clientX + mapItemInfo.clientWidth > window.innerWidth) {
+    const windowInnerWidthtOffset = window.innerWidth * 0.1
+    const windowInnerHeightOffset = window.innerHeight * 0.1
+
+    if (e.clientX + mapItemInfo.clientWidth > window.innerWidth - windowInnerWidthtOffset) {
         mapItemInfo.style.left = e.clientX - mapItemInfo.clientWidth + 'px'
     } else {
         mapItemInfo.style.left = e.clientX + 10 + 'px'
     }
-    if (e.clientY + mapItemInfo.clientHeight > window.innerHeight) {
+    if (e.clientY + mapItemInfo.clientHeight > window.innerHeight - windowInnerHeightOffset) {
         mapItemInfo.style.top = e.clientY - mapItemInfo.clientHeight + 'px'
     } else {
         mapItemInfo.style.top = e.clientY + 10 + 'px'

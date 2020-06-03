@@ -1,0 +1,164 @@
+.map-container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+
+    &__iran-map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        width: 100%;
+        height: inherit;
+    
+        &__item-info{
+            display: none;
+            position: absolute;
+            background-color: $map-tooltip-info-bg;
+            color: $map-tooltip-info-color;
+            text-align: right;
+            font-size: 1rem;
+            padding: .5rem .5rem .25rem;
+            border-radius: .5rem;
+            position: fixed;
+
+            &__location {
+                text-align: center;
+                margin-bottom: .25rem;
+            }
+    
+            &__container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: .25rem;
+                font-size: .8rem;
+    
+                &__title {
+                    text-align: center;
+                    margin-top: .5rem;
+                    margin-bottom: 0;
+                }
+    
+                &-supermarket {
+                    background-color: $map-location-container-supermarket-color;
+                    padding: .25rem .5rem;
+                    border-radius: .5rem;
+                    margin-top: .5rem;
+                    margin-left: .5rem;
+                    margin-bottom: 0;
+                }
+                
+                &-pharmacy {
+                    background-color: $map-location-container-pharmacy-color;
+                    padding: .25rem .5rem;
+                    border-radius: .5rem;
+                    margin-top: .5rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+        &__svg{
+            height: 100%;
+        }
+    
+        &__border{
+            & path {
+                fill: $map-border-color;
+                pointer-events: none;
+            }
+        }
+    
+        &__sea, 
+        &__lake{
+            & path {
+                fill: $map-sea-color;
+                pointer-events: none;
+            }
+        }
+    
+        &__province path, 
+        &__island path{
+            fill: $map-fill-color;
+            &:hover {
+                fill: $map-fill-hover;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &__info {
+        padding: 0 1rem;
+        margin-top: 0;
+
+        &__title {
+            text-align: center;
+            margin-bottom: 0;
+            padding: .5rem 1rem;
+            color: $map-tooltip-info-color;
+            border-top-right-radius: .5rem;
+            border-top-left-radius: .5rem;
+            background-color: $map-tooltip-info-bg;
+            font-size: .8rem;
+        }
+
+        &__container {
+            background-color: $map-info-bg;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            font-size: .8rem;
+            display: none;
+
+            &__location {
+                text-align: center;
+                margin: 0 5rem;
+                padding: .5rem;
+                border-bottom: 1px solid $map-tooltip-info-bg;
+            }
+
+            &__detail {
+                display: flex;
+
+                &-supermarket {
+                    margin-top: .5rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 0 0 50%;
+                    border-left: 1px solid red;
+
+                    &__title {
+                        margin: 0;
+                        text-align: center;
+                        padding: .25rem;
+                        color: $map-tooltip-info-color;
+                        background-color: $map-location-container-supermarket-color;
+                    }
+                }
+
+                &-pharmacy {
+                    margin-top: .5rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 0 0 50%;
+
+                    &__title {
+                        margin: 0;
+                        text-align: center;
+                        padding: .25rem;
+                        color: $map-tooltip-info-color;
+                        background-color: $map-location-container-pharmacy-color;
+                    }
+                }
+
+                &__subtitle {
+                    padding-right: .5rem;
+                }
+            }
+        }
+    }
+}
