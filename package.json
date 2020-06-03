@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "sass src/sass/main.scss src/css/style.css --watch --style compressed"
+    "scss": "sass rtl-demo/src/sass/main.scss rtl-demo/src/css/style.css --watch --style compressed"
   },
   "author": "shhonarmandi",
   "license": "ISC",
