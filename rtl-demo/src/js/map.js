@@ -21,11 +21,17 @@ maps.forEach(map => {
     })
 })
 
+document.addEventListener('scroll', () => {
+    mapItemInfo.innerHTML = ''
+    mapItemInfo.style.display = 'none'
+})
+
 const getMapItemRelativeCoordinates = e => {
     const windowInnerWidthtOffset = window.innerWidth * 0.1
     const windowInnerHeightOffset = window.innerHeight * 0.1
+    const mapWidth = document.querySelector('.map-container__iran-map').clientWidth
 
-    if (e.clientX - windowInnerWidthtOffset - mapItemInfo.clientWidth < window.innerWidth - 726) {
+    if (e.clientX - windowInnerWidthtOffset - mapItemInfo.clientWidth < window.innerWidth - mapWidth) {
         mapItemInfo.style.left = e.clientX + 10 + 'px'
         mapItemInfo.style.right = ''
     } else if (e.clientX - windowInnerWidthtOffset - mapItemInfo.clientWidth < 0) {

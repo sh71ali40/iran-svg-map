@@ -18,6 +18,11 @@ maps.forEach(map => {
     })
 })
 
+document.addEventListener('scroll', () => {
+    mapItemInfo.innerHTML = ''
+    mapItemInfo.style.display = 'none'
+})
+
 const getMapItemRelativeCoordinates = e => {
     const windowInnerWidthtOffset = window.innerWidth * 0.1
     const windowInnerHeightOffset = window.innerHeight * 0.1

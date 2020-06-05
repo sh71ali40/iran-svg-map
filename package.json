@@ -1,12 +1,12 @@
 {
   "name": "iran-svg-map",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "sass rtl-demo/src/sass/main.scss rtl-demo/src/css/style.css --watch --style compressed"
+    "scss": "sass src/sass/main.scss src/css/style.css --watch --style compressed"
   },
-  "author": "shhonarmandi",
+  "author": "Mohsen Honarmandi",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.26.7"

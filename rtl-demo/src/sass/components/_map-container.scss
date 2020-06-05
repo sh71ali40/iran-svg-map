@@ -116,20 +116,17 @@
 
             &__location {
                 text-align: center;
-                margin: 0 5rem;
                 padding: .5rem;
-                border-bottom: 1px solid $map-tooltip-info-bg;
             }
 
             &__detail {
                 display: flex;
 
                 &-supermarket {
-                    margin-top: .5rem;
                     display: flex;
                     flex-direction: column;
                     flex: 0 0 50%;
-                    border-left: 1px solid red;
+                    border-left: 1px solid $map-tooltip-info-bg;
 
                     &__title {
                         margin: 0;
@@ -141,7 +138,6 @@
                 }
 
                 &-pharmacy {
-                    margin-top: .5rem;
                     display: flex;
                     flex-direction: column;
                     flex: 0 0 50%;
