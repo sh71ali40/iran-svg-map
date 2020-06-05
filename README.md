@@ -22,7 +22,7 @@ Checkout the [demo](https://shhonarmandi.github.io/iran-svg-map/) at `https://sh
 3. Define JavaScript class and methods to show what exactly you want in the screen in a separate `map-info.js` file
 
 #### 1.3.0
-* Released: Jun 23, 2020
+* Released: Jun 3, 2020
 
 1. Add RTL demo with some dummy data
 2. Improve responsive capability
